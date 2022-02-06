@@ -447,6 +447,10 @@ a {
   font-weight: 400;
 }
 
+.html-embed {
+  height: 80vh;
+}
+
 @media screen and (max-width: 991px) {
   .hero-h1 {
     line-height: 1.4em;
