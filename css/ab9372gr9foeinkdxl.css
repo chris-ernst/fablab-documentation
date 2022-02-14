@@ -1,3 +1,15 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
 body {
   background-color: #121212;
   font-family: Poppins, sans-serif;
@@ -445,6 +457,12 @@ a {
   font-size: 2em;
   line-height: 1em;
   font-weight: 400;
+}
+
+.image-grid {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 991px) {
