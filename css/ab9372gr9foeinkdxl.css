@@ -323,6 +323,10 @@ a {
   backdrop-filter: blur(5px);
 }
 
+.project-card-overlay.highlight {
+  background-color: rgba(191, 155, 23, 0.8);
+}
+
 .project-h3 {
   position: relative;
   z-index: 3;
