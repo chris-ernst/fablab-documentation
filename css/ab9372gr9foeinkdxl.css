@@ -265,6 +265,10 @@ a {
   line-height: 2em;
 }
 
+.paragraph.unfished {
+  opacity: 0.31;
+}
+
 .hero-button-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
