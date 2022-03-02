@@ -1,3 +1,3 @@
 # fablab-documentation
 
-This is the first change to commit via local repository.
+Documentation of MDEF Fab Academy 2022.
