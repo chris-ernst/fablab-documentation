@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Sat Mar 26 2022 20:10:12 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Wed May 11 2022 16:18:04 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6231e8837f81fb6070d906a0" data-wf-site="61f1998d59720032c9348551">
 <head>
   <meta charset="utf-8">
@@ -31,15 +31,22 @@
     <div class="container w-container">
       <h3 class="h3">About the Class</h3>
       <h4 class="h4">Intro</h4>
-      <p class="paragraph">- Analog vs digital <br>- analog has continuous values vs digital, which has only steps of values<br>- how do we do that?<br>- Through transistors, little electronic switches that can open or close a circuit<br>- Through that we can build AND OR gates<br>- These AND OR gates, combined with transistors to store states, this can scale<br>- -&gt; Microchips<br>- PCBs vs ICs<br>- PCB -&gt; laser ecthed cicuit board<br>- IC -&gt; little black boxes -&gt; miniaturization<br>- Mircocontroller -&gt; mostly single-purpose, programmable<br>- Microprocessors -&gt; able to run OS, more multi-pupose, programmable, mtlit-tasking</p>
+      <p class="paragraph">- Analog vs digital <br>- analog has continuous values vs digital, which has only steps of values<br>- how do we do that?<br>- Through transistors, little electronic switches that can open or close a circuit<br>- Through that we can build AND OR gates<br>- These AND OR gates, combined with transistors to store states, this can scale<br>- -&gt; Microchips<br>- PCBs vs ICs<br>- PCB -&gt; laser etched circuit board<br>- IC -&gt; little black boxes -&gt; miniaturization<br>- Microcontroller -&gt; mostly single-purpose, programmable<br>- Microprocessors -&gt; able to run OS, more multi-purpose, programmable, multi-tasking</p>
       <h4 class="h4">Compiling</h4>
       <p class="paragraph">- 1MHz -&gt; number of operations per second, number of inputs &amp; output to change per second<br>- I2C, SPI protocols in dedicated parts of the chip<br>- Compiling is the process of converting our program (that we humans understand) into machine code (that the chip understands)<br>- Steps are:<br> - Pre-processor adds extra libraries to the code and checks for integrity <br> - Dependencies are resolved <br> - Compiling locally<br> - Uploading to board<br> - Flashing the board via the bootloader (the Bootloader manages the root on the board to receive and store programs to execute)<br></p>
       <h4 class="h4">Programming</h4>
       <p class="paragraph">- Most Microcontrollers use C++ for programming<br>- There is an emerging system for writing Python for MCs, but it is not fully fleshed out<br>- Although it seems like a shortcut to programming for microcontrollers, but using python to learn will cause problems later on<br>- -&gt; Always start from a programming flowchart<br>- To save states -&gt; Variables: Boolean (true, false), floating-point (constantliy changingvalues), integer, list or array (list of values), etc.<br>- Loops: close (some feedback to the loop to verify states) , open (no feedback back to loop)</p>
-      <h3 class="h3">[Homework Section]</h3>
-      <p class="paragraph unfished">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-      <div class="image-wrapper"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="image"></div>
-      <p class="image-credits">Image Credits</p>
+      <h3 class="h3">Spirulina Temp Sensor</h3>
+      <p class="paragraph">As for the homework, I programmed a simple temperature sensor for a jar of spirulina (which only grows in moderately warm temperatures), featuring a DT11 sensor and the Adafruit LED strip. After pressing a button, the temperature is measured by the DT11 and a visual feedback can be observed on the LED strip (red, blinking = too hot; green = optimal range; blue, blinking = too cold). </p>
+      <div class="image-wrapper">
+        <div data-poster-url="../videos/IMG_2696-poster-00001.jpg" data-video-urls="../videos/IMG_2696-transcode.mp4,../videos/IMG_2696-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="image w-background-video w-background-video-atom"><video id="fedab1fd-f8dd-6c3f-00c2-0889dc34fde1-video" autoplay="" loop="" style="background-image:url(&quot;../videos/IMG_2696-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <source src="../videos/IMG_2696-transcode.mp4" data-wf-ignore="true">
+            <source src="../videos/IMG_2696-transcode.webm" data-wf-ignore="true">
+          </video></div>
+      </div>
+      <p class="image-credits">Testing the final setup on my terrace.</p>
+      <div class="image-wrapper"><img src="../images/Bildschirmfoto-2022-05-11-um-17.09.59.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 991px) 95vw, 918.3854370117188px" srcset="../images/Bildschirmfoto-2022-05-11-um-17.09.59.png 500w, ../images/Bildschirmfoto-2022-05-11-um-17.09.59.png 800w, ../images/Bildschirmfoto-2022-05-11-um-17.09.59.png 1024w" alt="" class="image"><img src="../images/Bildschirmfoto-2022-05-11-um-17.12.00.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 991px) 95vw, 867.6129150390625px" srcset="../images/Bildschirmfoto-2022-05-11-um-17.12.00.png 500w, ../images/Bildschirmfoto-2022-05-11-um-17.12.00.png 800w, ../images/Bildschirmfoto-2022-05-11-um-17.12.00.png 1018w" alt="" class="image"></div>
+      <p class="image-credits">Debugging the visual feedback: After heating the DT11 close to body temperature, the LEDs flash bright red. On the right, the serial output can be see. </p>
       <h3 class="h3">Further Links</h3>
       <p class="paragraph"><strong>architectures</strong><br>   <a href="http://www.wiley.com/legacy/wileychi/wang_archi/supp/appendix_a.pdf">von Neumann</a>, <a href="http://harvardmagazine.com/2014/04/mark-i-rebooted">Harvard</a>, <a href="https://americanhistory.si.edu/collections/search/object/nmah_334663">bugs</a><br>   RISC, CISC<br>   microprocessor, microcontroller<br>   multi-core<br>   <a href="https://developer.nvidia.com/">GPU</a>, <a href="https://cloud.google.com/tpu/">TPU</a><br>   <a href="http://www.latticesemi.com/Products.aspx">FPGA</a>, <a href="https://tinyfpga.com/">TinyFPGA</a>, <a href="https://github.com/cliffordwolf/icestorm">IceStorm</a>
         <a href="#">, </a>
