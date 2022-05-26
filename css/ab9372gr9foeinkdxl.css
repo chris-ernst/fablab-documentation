@@ -434,6 +434,11 @@ a {
   object-fit: cover;
 }
 
+.image.contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .link {
   color: #e6e6e6;
 }
@@ -446,9 +451,18 @@ a {
 }
 
 .image-grid {
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .h4 {

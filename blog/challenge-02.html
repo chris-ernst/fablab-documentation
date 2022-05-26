@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Wed May 11 2022 16:18:04 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Thu May 26 2022 09:25:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="627bc6e6bffee89bd532d0ff" data-wf-site="61f1998d59720032c9348551">
 <head>
   <meta charset="utf-8">
@@ -29,14 +29,44 @@
   </div>
   <div id="Content" class="article-content wf-section">
     <div class="container w-container">
-      <h3 class="h3">About the Class</h3>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-      <h3 class="h3">[Homework Section]</h3>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-      <div class="image-wrapper"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="image"></div>
-      <p class="image-credits">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
-      <h3 class="h3">Further Links</h3>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      <h3 class="h3">Initial Idea</h3>
+      <p class="paragraph">In combining and navigating our interests, we saw intersections in our interests, mainly themes of immersive and interactiveness, explorative education, engaging experiences and provocative products.<br>‍<br>After understanding our collective themes, we asked ourselves: <em>how can we create an artifact that collects and presents data, using movement to answer provocative questions centered around MDEF journey and our collective consciousness?<br><br>‍</em>We wanted to find a way of summarizing the topics we discussed and learned about in this second term at MDEF and find a way of generating resposnes from people who are outside of MDEF, during Design Dialogues. These are the questions:</p>
+      <div class="image-wrapper"><img src="../images/questions.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, 96vw" srcset="../images/questions.png 500w, ../images/questions.png 800w, ../images/questions.png 1080w, ../images/questions.png 1600w, ../images/questions.png 2000w, ../images/questions.png 2098w" alt="" class="image contain"></div>
+      <h3 class="h3">Purpose</h3>
+      <p class="paragraph">What should the Artifact do:<br>- Connect to Kinect, Grasshopper, Firefly to recognise body movement and gestures via skeleton tracker<br>- Through Grasshopper and Firefly, determine lines and points as nodes on the body that the Kinect has sensed to connect to a servo Motor<br>- Control a servo Motor and its parameters on Grasshopper/ Firefly, using Arduino sketches and Uno Write component, use arm gestures to control the motors movement<br>- Servo Motor should successfully move a pen and move according to the gestures sensed through the kinect.<br>- Control a DC and its parameters on Grasshopper/ Firefly, using Arduino sketches and Uno Write components. This motor should rotate a disk while the servo inscribes the drawing according to the gestures.<br>- A series of questions should be listed, where the observer answers based on their arm gestures.<br><br>What should the Artifact not do:<br>- The motors should move at the correct speed, not to fast or too slow<br>- The questions/ prompts, the movement of the DC Motor should not be out of sinc. We calibrated each component to be in a 40 second window where each question should be answered in a 5 second window.</p>
+      <h3 class="h3">Planning</h3>
+      <div class="image-wrapper"><img src="../images/plan.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, 96vw" srcset="../images/plan.png 500w, ../images/plan.png 800w, ../images/plan.png 1080w, ../images/plan.png 1600w, ../images/plan.png 1740w" alt="" class="image contain"></div>
+      <p class="image-credits">Our timetable including deliverables.</p>
+      <p class="image-credits">Splitting our roles. </p>
+      <h3 class="h3">Execution</h3>
+      <h3 class="h4">CNC</h3>
+      <p class="paragraph">We used the CNC milling machine to create the structure for our design. Since we didn’t want to waste material by making avoidable mistakes, we initially prototyped the base using cardboard.</p>
+      <h3 class="h4">3D SCANNING</h3>
+      <p class="paragraph">We used the Kinect to be able to detect the motion of the participants because we wanted the project to be interactive. Grasshopper was the program we used to make the movements control the servo. Later, we also combined more electronic components in Grasshopper, such as the button, spinning DC motor and potentiometer.</p>
+      <h3 class="h4">ELECTRONICS DESIGN</h3>
+      <p class="paragraph">We used Arduino UNO and bread boards with servos, motors, buttons and potentiometer to be able to control the rotation of the panel and movements of the pen in relation to the Kinect. </p>
+      <h3 class="h4">EMBEDDED PROGRAMMING</h3>
+      <p class="paragraph">We used Arduino to design the electronics: turning on the motor with a button and regulating the speed. Then, we ended up finalizing everything in Grasshopper so that we could have a unique file with both Kinect and electronic components.</p>
+      <h3 class="h4">3D MODELING</h3>
+      <p class="paragraph">The joint between the motor and the cardboard “wheel” was modeled in Fusion, imported to Cura and printed using the fab lab ender-3 printer.</p>
+      <h3 class="h4">LASER CUTTING</h3>
+      <p class="paragraph">The handle meant to hold the servo and pen was designed in Fusion, then laser cut using an acrylic scrap sheet.</p>
+      <div class="image-wrapper"><img src="../images/system_diagram.jpeg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, 96vw" srcset="../images/system_diagram.jpeg 500w, ../images/system_diagram.jpeg 800w, ../images/system_diagram.jpeg 1080w, ../images/system_diagram.jpeg 1280w" alt="" class="image contain"></div>
+      <p class="image-credits">Electronic schematics. </p>
+      <h3 class="h3">Images</h3>
+      <div class="image-grid"><img src="../images/sketch3.jpg" loading="lazy" sizes="(max-width: 767px) 46vw, 47vw" srcset="../images/sketch3.jpg 500w, ../images/sketch3.jpg 800w, ../images/sketch3.jpg 1080w, ../images/sketch3.jpg 1600w, ../images/sketch3.jpg 2000w, ../images/sketch3.jpg 2600w, ../images/sketch3.jpg 3024w" alt="" class="image"><img src="../images/sketch4.jpg" loading="lazy" sizes="(max-width: 767px) 46vw, 47vw" srcset="../images/sketch4.jpg 500w, ../images/sketch4.jpg 800w, ../images/sketch4.jpg 1080w, ../images/sketch4.jpg 1600w, ../images/sketch4.jpg 2000w, ../images/sketch4.jpg 2600w, ../images/sketch4.jpg 3024w" alt="" class="image"></div>
+      <p class="image-credits">Initial sketches by Joaco.</p>
+      <div class="image-wrapper"><img src="../images/GHArduino.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, 96vw" srcset="../images/GHArduino.png 500w, ../images/GHArduino.png 800w, ../images/GHArduino.png 1080w, ../images/GHArduino.png 1600w, ../images/GHArduino.png 1920w" alt="" class="image"></div>
+      <p class="image-credits">Firefly components in Grasshopper, a plug-in for Rhino, converting arduino inputs into servo outputs.</p>
+      <div class="image-grid"><img src="../images/Prototype2.JPG" loading="lazy" sizes="(max-width: 767px) 46vw, 47vw" srcset="../images/Prototype2.JPG 500w, ../images/Prototype2.JPG 800w, ../images/Prototype2.JPG 1080w, ../images/Prototype2.JPG 1600w, ../images/Prototype2.JPG 2000w, ../images/Prototype2.JPG 2600w, ../images/Prototype2.JPG 3024w" alt="" class="image"><img src="../images/juaco_chris.jpeg" loading="lazy" sizes="(max-width: 767px) 46vw, 47vw" srcset="../images/juaco_chris.jpeg 500w, ../images/juaco_chris.jpeg 800w, ../images/juaco_chris.jpeg 1080w, ../images/juaco_chris.jpeg 1600w, ../images/juaco_chris.jpeg 2000w, ../images/juaco_chris.jpeg 2048w" alt="" class="image"></div>
+      <p class="image-credits">Paper prototype and CNC-lasered drawing arm. </p>
+      <div class="image-wrapper"><img src="../images/Fusion2.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, 96vw" srcset="../images/Fusion2.png 500w, ../images/Fusion2.png 800w, ../images/Fusion2.png 1080w, ../images/Fusion2.png 1600w, ../images/Fusion2.png 2000w, ../images/Fusion2.png 2880w" alt="" class="image"></div>
+      <p class="image-credits">3D model in Fusion360. </p>
+      <div class="image-wrapper"><img src="../images/update1.JPG" srcset="../images/update1.JPG 500w, ../images/update1.JPG 800w, ../images/update1.JPG 1080w, ../images/update1.JPG 1600w, ../images/update1.JPG 2000w, ../images/update1.JPG 2419w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, 96vw" alt="" class="image"></div>
+      <h3 class="h3">Personal Reflection</h3>
+      <p class="paragraph">We encountered some BIG problems regarding the time and difficulty in making this piece. Overall, we think it was too complex for a simple one-week project.<br><br>There was a problem when trying to control the amount of time for which the motor was spinning. When controlled by the button, there was a strange ratio appearing on Grasshopper. The time was about 3x faster than the values that we inserted, and the problem only persisted with the button. The only way we could solve this was by modifying the step count from 1 second to 3 seconds. It was a sort of manual remapping of the values.<br><br>The motor’s spinning was hard to control: the threshold it had was very specific and below a certain number, it would just shut down. This meant that the full rotation was too fast for what we required. We solved this problem by creating a gear with the spinning wheel, adding more friction to the rotation.<br><br>We encountered multiple incompatibilities when trying to combine separate Grasshopper files (the Kinect project + the electronics project) and we still do not know what the problem is. We had to rebuild and reset many of the nodes for the file to work again.</p>
+      <h3 class="h3">Github Repository</h3>
+      <p class="paragraph">Our complete documentation, including fabrication files, can be found <a href="https://github.com/chris-ernst/fabacademy-challenge-2" target="_blank">here</a>. </p>
     </div>
   </div>
   <div class="footer wf-section">
